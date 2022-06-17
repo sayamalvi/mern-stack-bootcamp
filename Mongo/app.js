@@ -1,19 +1,7 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/fruitsDB', { useNewUrlParser: true });
-
-const fruitsSchema = new mongoose.Schema({
-    name: String,
-    rating: Number,
-    review: String
-});
-
-const Fruit = mongoose.model('Fruit', fruitsSchema);
-
-const fruit = new Fruit({
-    name: "Apple",
-    rating: 7,
-    review: "Nice"
-})
-
-fruit.save();
-
+const express = require('express');
+const app = express();
+const dbURI = 'mongodb+srv://sayamAlvi:sayamAlvi@cluster0.chzyy2x.mongodb.net/first?retryWrites=true&w=majority';
+mongoose.connect(dbURI)
+  .then((result) => console.log("Connected"))
+  .catch((err) => console.log(err));
