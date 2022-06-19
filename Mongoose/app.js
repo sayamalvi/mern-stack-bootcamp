@@ -28,7 +28,7 @@ const Item = mongoose.model("Item", itemsSchema);
 
 // name documents 
 const item1 = new Item({ name: "Welcome to the ToDo List" });
-const item2 = new Item({ name: "<-Hit the + button to add an item" });
+const item2 = new Item({ name: "<- Hit the + button to add an item" });
 const item3 = new Item({ name: "Hit to delete an item" });
 
 // make and array which will be passed as arguments to insert data to database
@@ -48,9 +48,10 @@ app.get('/', function (req, res) {
     //  the function will contain the things which we will find inside the items collection
     Item.find({}, function (err, foundItems) {
 
+        // if items collection is empty only then insert default items
         if (foundItems.length === 0) {
 
-            // Insert documents 
+            // Insert default items in database
             Item.insertMany(defaultItems, function (err) {
                 if (err) {
                     console.log(err);
@@ -59,9 +60,11 @@ app.get('/', function (req, res) {
                     console.log("Documents added")
                 }
             });
-            // Redirect to the home route 
+            // Redirect to the home route and show items in the list
             res.redirect('/');
         }
+
+        // else render list.ejs
         else {
             res.render("list", { listTitle: "Today", newListItems: foundItems });
         }
@@ -112,18 +115,18 @@ app.post('/', function (req, res) {
 
 });
 
+// handles post requests coming to /delete route
 app.post('/delete', function (req, res) {
     const deletedItem = req.body.checkbox;
     const listName = req.body.listName;
 
     if (listName == "Today") {
+
         Item.findByIdAndRemove(deletedItem, function (err) {
-            if (err) {
-                console.log(err);
+            if (!err) {
+                console.log("Item successfully deleted");
             }
-            else {
-                console.log("Item deleted")
-            }
+
         })
         setTimeout(function () {
             res.redirect('/');

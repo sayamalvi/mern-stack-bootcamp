@@ -6,16 +6,24 @@
     </div>
     <div class="box">
         <% newListItems.forEach((item)=>{ %>
+            <!-- this form will make a post request to /delete route-->
+            <!-- this form is responsible to delete items -->
+
             <form action="/delete" method="post">
                 <div class="item">
+                    <!-- onchange submits the form to make post request to /delete route -->
+
+                    <!-- newListItems is an array of mongodb documents.  Each of these items or documents have a name as well as an id. So if I bind that id with the value of each of the checkboxes we can find out which document was checked -->
                     <input type="checkbox" name="checkbox" value="<%= item.id%>" onchange="this.form.submit()">
                     <p>
+                        <!-- shows only the name of the item document -->
                         <%= item.name %>
                     </p>
                 </div>
                 <input type="hidden" name="listName" value="<%= listTitle%>"></input>
             </form>
             <% }); %>
+                <!-- this form adds new items -->
                 <form action="/" method="post" class="item">
                     <input type="text" name="newItem" placeholder="New Item">
                     <button type="submit" name="list" value=<%=listTitle %>>+</button>
