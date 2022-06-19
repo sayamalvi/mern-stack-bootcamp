@@ -26,6 +26,7 @@
                 <!-- this form adds new items -->
                 <form action="/" method="post" class="item">
                     <input type="text" name="newItem" placeholder="New Item">
-                    <button type="submit" name="list" value=<%=listTitle %>>+</button>
+                    <!-- Whenver we submit our form we can get access to newItem and list -->
+                    <button type="submit" name="list" value=<%= listTitle %>>+</button>
                 </form>
     </div>

@@ -31,15 +31,20 @@ const item1 = new Item({ name: "Welcome to the ToDo List" });
 const item2 = new Item({ name: "<- Hit the + button to add an item" });
 const item3 = new Item({ name: "Hit to delete an item" });
 
-// make and array which will be passed as arguments to insert data to database
+// an array which will be passed as argument to insert data to database
 const defaultItems = [item1, item2, item3]
 
+// every new list that we create it will have a name and it will also have an array of item document associated with it 
 const listSchema = new mongoose.Schema({
     name: String,
     items: [itemsSchema]
 })
 
+// create a mongoose model of listSchema
 const List = mongoose.model('List', listSchema);
+
+
+
 
 // when user accesses the home route 
 app.get('/', function (req, res) {
@@ -72,19 +77,30 @@ app.get('/', function (req, res) {
 });
 
 
+
+
+// handles dynamic routes with express route parameters
 app.get('/:customListName', function (req, res) {
+
+    // use lodash to capitalize the route url so 'abc' and 'Abc' are one list
     const customListName = _.capitalize(req.params.customListName);
 
+    // if the user accesses customListName this will create a list based of List model that we created above
+    // findOne returns a document(object) if it is found 
     List.findOne({ name: customListName }, function (err, foundList) {
         if (!err) {
+            // if there is 
             if (!foundList) {
                 const list = new List({
                     name: customListName,
                     items: defaultItems
                 })
                 list.save();
+
+                // it will redirect back to the new route which is customListName route
                 res.redirect('/' + customListName);
             }
+            // else show an existing list
             else {
                 res.render('list', { listTitle: foundList.name, newListItems: foundList.items })
             }
@@ -93,20 +109,32 @@ app.get('/:customListName', function (req, res) {
 });
 
 
+
+
+
+// handles post request when user adds and item with + button
 app.post('/', function (req, res) {
     const itemName = req.body.newItem;
     const listName = req.body.list;
 
+    // no matter from which list the item came from we still have to create it as and item document
     const item = new Item({
         name: itemName
     });
 
+    // if listName that triggered the post request is equals to "Today"(we probably in default list we will save the item and redirect to the root route)
     if (listName === "Today") {
         item.save();
         res.redirect('/');
     }
+
+    // if listName is not Today then it came from a custom list , so we have to search for the list
     else {
+
+        // this will look for the list with the name listName
         List.findOne({ name: listName }, function (err, foundList) {
+
+            // it will add item to the custom list
             foundList.items.push(item);
             foundList.save();
             res.redirect('/' + listName);
@@ -115,26 +143,40 @@ app.post('/', function (req, res) {
 
 });
 
-// handles post requests coming to /delete route
+
+
+
+
+// handles post requests route when user checks a checkbox
 app.post('/delete', function (req, res) {
     const deletedItem = req.body.checkbox;
     const listName = req.body.listName;
 
+    // checks whether we are deleting and item from default list or custom list
     if (listName == "Today") {
 
+        // if it is the default list, we will pass the id of deleted item in the below method
         Item.findByIdAndRemove(deletedItem, function (err) {
             if (!err) {
                 console.log("Item successfully deleted");
             }
-
         })
+        // and redirect to the root route
         setTimeout(function () {
             res.redirect('/');
         }, 500)
     }
+
+    // if its a custom list
     else {
+
+        // it will return only one list
         List.findOneAndUpdate(
+
+            // the list should have the name listName 
             { name: listName },
+
+            // we want to pull from items array(only array in our list document) by finding it through id
             { $pull: { items: { _id: deletedItem } } },
             function (err, foundList) {
                 if (!err) {
