@@ -16,7 +16,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 // connect mongoose 
-mongoose.connect('mongodb://127.0.0.1/todoDB');
+const url = "mongodb+srv://Sayam:sayamAlvi@cluster0.chzyy2x.mongodb.net/?retryWrites=true&w=majority";
+const params = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}
+mongoose.connect(url, params)
+    .then(() => { console.log("Connected to the Database") })
+    .catch((err) => console.log("Error connecting to the Database", err));
 
 // declare schema - defines structure and attributes of a document
 const itemsSchema = new mongoose.Schema({
