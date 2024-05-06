@@ -1,0 +1,350 @@
+repo_name: sayamalvi/full-stack-bootcamp
+report_id: fcda128790ebe94947e0e1608a17069d
+version: 0.1
+repo_type: Public
+timestamp: '2024-05-06T05:11:44+00:00'
+requested_by: sayamalvi
+provider: github
+branch: master
+detected_tools_count: 25
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp
+  detection_source: Repo Metadata
+- name: EJS
+  description: An Embedded JavaScript templating Language
+  website_url: https://ejs.co/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Templating Languages & Extensions
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/Authentication/package.json
+  detection_source: Authentication/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-06-22 17:49:58.000000000 Z
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp
+  detection_source: Repo Metadata
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  version: 3.3.3
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/React/To-do-app/package-lock.json
+  detection_source: React/To-do-app/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-07-04 02:15:05.000000000 Z
+- name: ExpressJS
+  description: Sinatra inspired web development framework for node.js -- insanely
+    fast, flexible, and simple
+  website_url: http://expressjs.com/
+  version: 4.18.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Microframeworks (Backend)
+  image_url: https://img.stackshare.io/service/1163/hashtag.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/APIs/weather-project/package-lock.json
+  detection_source: APIs/weather-project/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-06-10 14:32:59.000000000 Z
+- name: Material-UI
+  description: Material UI is a library of React UI components that implements Google's
+    Material Design.
+  website_url: https://github.com/mui/material-ui
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Front-End Frameworks
+  image_url: https://img.stackshare.io/service/1904/default_44d81cb9fadbc3688b7e91a6d5217d0ea5358b57.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/React/keeper-app/package.json
+  detection_source: React/keeper-app/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-07-04 07:21:15.000000000 Z
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 16.8.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/React/To-do-app/package-lock.json
+  detection_source: React/To-do-app/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-07-04 02:15:05.000000000 Z
+- name: MongoDB
+  description: The database for giant ideas
+  website_url: http://www.mongodb.com/
+  version: 4.7.0
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Databases
+  image_url: https://img.stackshare.io/service/1030/leaf-360x360.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/Authentication/package-lock.json
+  detection_source: Mongoose(Blog Website Upgrade)/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-06-20 13:15:35.000000000 Z
+- name: Mongoose
+  description: MongoDB object modeling designed to work in an asynchronous environment
+  website_url: http://mongoosejs.com/
+  version: 6.4.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Object Document Mapper (ODM)
+  image_url: https://img.stackshare.io/service/1231/0TXzZU7W_400x400.jpg
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/Authentication/package-lock.json
+  detection_source: Authentication/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-07-04 12:41:28.000000000 Z
+- name: Dotenv
+  description: Loads environment variables from .env for Nodejs projects
+  website_url: https://github.com/motdotla/dotenv
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Server Configuration and Automation
+  image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/Authentication/package.json
+  detection_source: Authentication/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-06-23 14:38:47.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp
+  detection_source: Repo Metadata
+- name: nodemon
+  description: A simple monitor script for use during development of a node.js app
+  website_url: http://nodemon.io/
+  version: 2.0.18
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: node.js Application Monitoring
+  image_url: https://img.stackshare.io/service/5577/preview.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/Authentication/package-lock.json
+  detection_source: Authentication/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-06-26 17:35:24.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/React/keeper-app/package.json
+  detection_source: React/keeper-app/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-07-04 07:21:15.000000000 Z
+- name: Lodash
+  description: A JavaScript utility library
+  website_url: https://lodash.com
+  version: 4.17.21
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/Authentication/package-lock.json
+  detection_source: EJS/Blog Website/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-06-13 17:18:53.000000000 Z
+- name: Passport
+  description: Simple, unobtrusive authentication for Node.js
+  website_url: http://passportjs.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: User Management and Authentication
+  image_url: https://ucarecdn.com/8f3cac0e-b146-4f0f-878c-680a6671d804/
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/Authentication/package.json
+  detection_source: Authentication/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-07-04 12:41:28.000000000 Z
+- name: express
+  description: Fast, unopinionated, minimalist web framework
+  package_url: https://www.npmjs.com/express
+  version: 4.18.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/APIs/weather-project/package-lock.json
+  detection_source: APIs/weather-project/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-06-10 14:32:59.000000000 Z
+  vulnerabilities:
+  - name: Express.js Open Redirect in malformed URLs
+    cve_id: CVE-2024-29041
+    cve_url: https://github.com/advisories/GHSA-rv95-896h-c2vc
+    detected_date: Mar 26
+    severity: moderate
+    first_patched: 4.19.2
+- name: "@material-ui/core"
+  description: React components that implement Google's Material Design
+  package_url: https://www.npmjs.com/@material-ui/core
+  version: 4.12.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16271/default_f04d39fc656c2e32ee1b9d3875a3002459aa3b69.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/React/keeper-app/package-lock.json
+  detection_source: React/keeper-app/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-07-04 07:21:15.000000000 Z
+- name: "@material-ui/icons"
+  description: Material Design Svg Icons converted to Material-UI React components
+  package_url: https://www.npmjs.com/@material-ui/icons
+  version: 4.11.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16471/default_73c88a18b684e01cbdbf945631a40a44aff5a777.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/React/keeper-app/package-lock.json
+  detection_source: React/keeper-app/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-07-04 07:21:15.000000000 Z
+- name: bcrypt
+  description: A bcrypt library for NodeJS
+  package_url: https://www.npmjs.com/bcrypt
+  version: 5.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16526/default_0a704f5fac0bffcf529c9a61658d0b9ddbf7504e.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/Authentication/package-lock.json
+  detection_source: Authentication/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-06-26 17:35:24.000000000 Z
+- name: body-parser
+  description: Node.js body parsing middleware
+  package_url: https://www.npmjs.com/body-parser
+  version: 1.20.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15906/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/APIs/weather-project/package-lock.json
+  detection_source: APIs/weather-project/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-06-10 14:32:59.000000000 Z
+- name: express-session
+  description: Simple session middleware for Express
+  package_url: https://www.npmjs.com/express-session
+  version: 1.17.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16239/default_180418c6fa6cdb8f7a3500f84a8fedb884fcb3fa.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/Authentication/package-lock.json
+  detection_source: Authentication/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-06-26 17:35:24.000000000 Z
+- name: md5
+  description: Js function for hashing messages with MD5
+  package_url: https://www.npmjs.com/md5
+  version: 2.3.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16342/default_c47f6a56d74fae4d4404d77067b2fa35da6f1924.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/Authentication/package-lock.json
+  detection_source: Authentication/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-06-22 17:49:58.000000000 Z
+- name: passport-local
+  description: Local username and password authentication strategy for Passport
+  package_url: https://www.npmjs.com/passport-local
+  version: 1.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16747/default_adce7cef6d131ffc31466624541462e4db9534d4.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/Authentication/package-lock.json
+  detection_source: Authentication/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-07-04 12:41:28.000000000 Z
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 16.8.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/React/To-do-app/package-lock.json
+  detection_source: React/To-do-app/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-07-04 02:15:05.000000000 Z
+- name: react-scripts
+  description: Configuration and scripts for Create React App
+  package_url: https://www.npmjs.com/react-scripts
+  version: 3.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15985/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/sayamalvi/full-stack-bootcamp/blob/master/React/To-do-app/package-lock.json
+  detection_source: React/To-do-app/package.json
+  last_updated_by: Sayam
+  last_updated_on: 2022-07-04 02:15:05.000000000 Z
